@@ -1,0 +1,33 @@
+/* Write your CSS here */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+
+.about-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+.mobile-about-image {
+  width: 80%;
+  max-width: 458px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-about-image {
+    display: none;
+  }
+}
+
+.desktop-about-image {
+  width: 80%;
+  max-width: 1110px;
+}
+@media screen and (max-width: 768px) {
+  .desktop-about-image {
+    display: none;
+  }
+}
